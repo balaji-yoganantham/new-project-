@@ -1,0 +1,34 @@
+agents:
+  research_agent:
+    name: "WebResearcher"
+    model: "llama-3.3-70b-versatile"
+    max_tokens: 4000
+    temperature: 0.3
+    
+  analysis_agent:
+    name: "FactAnalyzer"
+    model: "llama-3.3-70b-versatile"
+    max_tokens: 3000
+    temperature: 0.2
+    
+  synthesis_agent:
+    name: "Synthesizer"
+    model: "llama-3.3-70b-versatile"
+    max_tokens: 5000
+    temperature: 0.4
+
+  orchestrator:
+    name: "Orchestrator"
+    model: "llama-3.3-70b-versatile"
+    max_tokens: 2000
+    temperature: 0.3
+
+search:
+  max_results: 10
+  timeout: 30
+  
+storage:
+  vector_db_path: "./data/vector_db"
+  references_path: "./data/references"
+  summaries_path: "./data/summaries"
+
